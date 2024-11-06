@@ -19,8 +19,9 @@ primary_entity:
 secondary_entities:
   - entity: sensor
     class: enum
+    deprecated: binary_sensors (motion and occupancy)
     category: diagnostic
-    name: Status
+    translation_key: status
     dps:
       - id: 1
         type: string
@@ -40,6 +41,7 @@ secondary_entities:
       - id: 2
         type: integer
         name: value
+        optional: true
         range:
           min: 1
           max: 10
@@ -91,6 +93,7 @@ secondary_entities:
       - id: 102
         type: integer
         name: value
+        optional: true
         range:
           min: 1
           max: 10

@@ -1,7 +1,5 @@
 # Home Assistant Tuya Local component
 
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=make-all_tuya-local&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=make-all_tuya-local) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=make-all_tuya-local&metric=security_rating)](https://sonarcloud.io/dashboard?id=make-all_tuya-local) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=make-all_tuya-local&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=make-all_tuya-local) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=make-all_tuya-local&metric=ncloc)](https://sonarcloud.io/dashboard?id=make-all_tuya-local) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=make-all_tuya-local&metric=coverage)](https://sonarcloud.io/dashboard?id=make-all_tuya-local)
-
 Please report any [issues](https://github.com/make-all/tuya-local/issues) and feel free to raise [pull requests](https://github.com/make-all/tuya-local/pulls).
 [Many others](https://github.com/make-all/tuya-local/blob/main/ACKNOWLEDGEMENTS.md) have contributed their help already.
 
@@ -225,6 +223,10 @@ not like this and require all commands to set only a single dp at a
 time, so you may need to experiment with your automations to see
 whether a single command or multiple commands (with delays, see above)
 work best with your devices.
+
+When adding devices, some devices that are detected as protocol version
+3.3 at first require version 3.2 to work correctly. Either they cannot be
+detected, or work as read-only if the pprotocol is set to 3.3.
 
 ## Heater issues
 
